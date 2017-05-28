@@ -13,7 +13,7 @@ rm -f /lib/systemd/system/basic.target.wants/*;\
 rm -f /lib/systemd/system/anaconda.target.wants/*;
 
 RUN yum makecache fast \
- && yum -y install elrepo initscripts \
+ && yum -y install epel-release initscripts \
  && yum -y update \
  && yum -y install \
       ansible \
